@@ -16,6 +16,10 @@ body {
   flex-wrap: wrap;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -30,6 +34,10 @@ body {
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .align-items {
@@ -49,6 +57,17 @@ body {
   color: rgb(99, 79, 79);
 }
 
+.text_md {
+  font-size: 15px;
+  color: rgb(99, 79, 79);
+}
+
+.title {
+  margin: 30px 0 20px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .menu-icon {
   font-size: 30px;
   padding: 5px;
@@ -63,13 +82,17 @@ body {
 
 .separator {
   width: 1px;
-  height: 10px;
+  height: 12px;
   margin: 0 6px;
   background-color: rgb(206, 182, 182);
 }
 
 .header {
   margin: 15px 0;
+}
+
+.header i {
+  font-size: 15px;
 }
 
 .header a {
@@ -94,8 +117,8 @@ body {
 }
 
 .logo_icon img {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
 }
 
 .nav {
@@ -104,8 +127,17 @@ body {
 }
 
 .nav a {
+  padding: 18px 13px;
   color: rgb(99, 79, 79);
   text-decoration: none;
+}
+
+.nav_item:hover {
+  background-color: rgb(221, 224, 33);
+}
+
+.nav_item:hover + .hashed_line {
+  border-color: rgb(221, 224, 33);
 }
 
 .about {
@@ -115,8 +147,9 @@ body {
 
 .dashed_line {
   width: 1px;
-  height: 40px;
-  border: 1px solid rgb(221, 224, 33);
+  height: 50px;
+  border-left: 1px dotted rgb(221, 224, 33);
+  border-width: thick;
 }
 
 .horizontal {
@@ -126,10 +159,128 @@ body {
 }
 
 .banner {
-  margin: 26px 0 70px 0;
+  margin: 26px 0 50px 0;
 }
 
 .banner img {
   height: 350px;
   width: 100%;
+}
+
+.about_item {
+  width: 100%;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.event {
+  width: 25%;
+}
+
+.about_item img {
+  height: 60px;
+  width: 60px;
+}
+
+.dashed_line_main {
+  width: 1px;
+  height: 200px;
+  margin: 0 20px;
+  border: 1px dashed rgb(197, 182, 182);
+}
+
+.img_web {
+  width: 100%;
+  margin: 40px 0 70px 0;
+}
+
+.img_shop {
+  width: 48%;
+  height: auto;
+}
+
+.img_web img {
+  width: 100%;
+  height: 340px;
+}
+
+.background_footer {
+  background-color: rgb(236, 231, 231);
+}
+
+.footer_document {
+  width: 33.33%;
+}
+
+.address .phone {
+  margin-bottom: 12px;
+}
+
+.address p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.about_us {
+  line-height: 1.4;
+}
+
+.join {
+  line-height: 1.4;
+}
+
+.footer_hashed_line {
+  width: 1px;
+  height: 182px;
+  margin: 25px 25px 10px 25px;
+  border: 1px dashed rgb(197, 182, 182);
+}
+
+.footer_inp {
+  width: 255px;
+  border: 1px solid rgb(197, 182, 182);
+  background-color: white;
+}
+
+.footer_inp i {
+  padding: 2px;
+  font-size: 30px;
+}
+
+.email_inp {
+  width: 230px;
+  outline: none;
+  border: none;
+  padding-left: 12px;
+}
+
+.bord_img {
+  margin: 0 5px;
+}
+
+.icon_link {
+  margin-bottom: 40px;
+}
+
+.icon_link img {
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgb(197, 182, 182);
+  border-radius: 50%;
+}
+
+.footer_item {
+  background-color: rgb(126, 116, 116);
+}
+
+.footer_item a {
+  text-decoration: none;
+  color: white;
+}
+
+.separator_footer {
+  width: 1px;
+  height: 15px;
+  margin: 20px 20px;
+  background-color: white;
 }
