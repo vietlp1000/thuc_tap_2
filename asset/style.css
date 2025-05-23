@@ -1,0 +1,135 @@
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.text {
+  font-size: 13px;
+  color: rgb(99, 79, 79);
+}
+
+.menu-icon {
+  font-size: 30px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.width {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.separator {
+  width: 1px;
+  height: 10px;
+  margin: 0 6px;
+  background-color: rgb(206, 182, 182);
+}
+
+.header {
+  margin: 15px 0;
+}
+
+.header a {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(99, 79, 79);
+}
+
+.logo_item {
+  position: relative;
+}
+
+.logo_web {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo_web img {
+  height: 70px;
+  width: 300px;
+}
+
+.logo_icon img {
+  height: 40px;
+  width: 40px;
+}
+
+.nav {
+  margin: 32px 0;
+  font-size: 14px;
+}
+
+.nav a {
+  color: rgb(99, 79, 79);
+  text-decoration: none;
+}
+
+.about {
+  font-size: 26px;
+  color: rgb(99, 79, 79);
+}
+
+.dashed_line {
+  width: 1px;
+  height: 40px;
+  border: 1px solid rgb(221, 224, 33);
+}
+
+.horizontal {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(122, 89, 89);
+}
+
+.banner {
+  margin: 26px 0 70px 0;
+}
+
+.banner img {
+  height: 350px;
+  width: 100%;
+}
