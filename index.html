@@ -13,7 +13,7 @@
 
   <body>
     <header class="width">
-      <div class="header flex justify-end align-items">
+      <div id="header" class="header flex justify-end align-items">
         <div class="header_item">
           <a href=""><i class="bx bx-search-alt-2"></i></a>
         </div>
@@ -37,7 +37,7 @@
         </div>
       </div>
 
-      <div class="menu-icon" id="menuIcon">&#9776;</div>
+      <div class="menu_icon" id="menuIcon">&#9776;</div>
 
       <div class="logo_item flex justify-between align-items">
         <div class=""></div>
@@ -78,45 +78,53 @@
     <!--end header -->
 
     <nav class="width">
-      <div class="nav flex justify-around align-items">
-        <div>
-          <a href="" class="nav_item"> PAINT </a>
+      <div id="menuNav" class="nav flex justify-around align-items">
+        <div class="nav_group flex align-items">
+          <div class="nav_item">
+            <a href=""> PAINT </a>
+          </div>
+          <div class="dashed_line"></div>
         </div>
 
-        <div class="dashed_line"></div>
-
-        <div>
-          <a href="" class="nav_item"> PAINT SUPPLIES </a>
+        <div class="nav_group flex align-items">
+          <div class="nav_item">
+            <a href=""> PAINT SUPPLIES </a>
+          </div>
+          <div class="dashed_line"></div>
         </div>
 
-        <div class="dashed_line"></div>
-
-        <div>
-          <a href="" class="nav_item"> VINTAGE WARES </a>
+        <div class="nav_group flex align-items">
+          <div class="nav_item">
+            <a href=""> VINTAGE WARES </a>
+          </div>
+          <div class="dashed_line"></div>
         </div>
 
-        <div class="dashed_line"></div>
-
-        <div>
-          <a href="" class="nav_item"> SUITE GOODS </a>
+        <div class="nav_group flex align-items">
+          <div class="nav_item">
+            <a href=""> SUITE GOODS </a>
+          </div>
+          <div class="dashed_line"></div>
         </div>
 
-        <div class="dashed_line"></div>
-
-        <div>
-          <a href="" class="nav_item"> HOW-TO </a>
+        <div class="nav_group flex align-items">
+          <div class="nav_item">
+            <a href=""> HOW-TO </a>
+          </div>
+          <div class="dashed_line"></div>
         </div>
 
-        <div class="dashed_line"></div>
-
-        <div>
-          <a href="" class="nav_item"> EVENTS & WORKSHOPS </a>
+        <div class="nav_group flex align-items">
+          <div class="nav_item">
+            <a href=""> EVENTS & WORKSHOPS </a>
+          </div>
+          <div class="dashed_line"></div>
         </div>
 
-        <div class="dashed_line"></div>
-
-        <div>
-          <a href="" class="nav_item"> SUITE INSPIRATION </a>
+        <div class="nav_group flex align-items">
+          <div class="nav_item">
+            <a href=""> SUITE INSPIRATION </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -141,8 +149,8 @@
 
         <div class="horizontal"></div>
 
-        <div class="about_item flex">
-          <div class="event flex align-items column">
+        <div class="about_item flex align-items">
+          <div class="event flex column">
             <div class="text_md">SUITE INSPIRATION</div>
 
             <div class="header">
@@ -154,7 +162,7 @@
 
           <div class="dashed_line_main"></div>
 
-          <div class="event flex align-items column">
+          <div class="event flex column">
             <div class="text_md">WORKSHOP & EVENTS</div>
 
             <div class="header">
@@ -166,7 +174,7 @@
 
           <div class="dashed_line_main"></div>
 
-          <div class="event flex align-items column">
+          <div class="event flex column">
             <div class="text_md">HOW TO</div>
 
             <div class="header">
@@ -180,7 +188,7 @@
 
           <div class="dashed_line_main"></div>
 
-          <div class="event flex align-items column">
+          <div class="event flex column">
             <div class="text_md">MULTIPLE LOCATIONS</div>
 
             <div class="header">
@@ -195,12 +203,12 @@
 
         <div class="horizontal"></div>
 
-        <div class="img_web flex justify-between align-items">
-          <div class="img_shop">
+        <div class="img_web">
+          <div>
             <img src="./image/banner/banner2.jpg" alt="" />
           </div>
 
-          <div class="img_shop">
+          <div>
             <img src="./image/banner/banner3.jpg" alt="" />
           </div>
         </div>
@@ -210,7 +218,7 @@
 
     <footer class="background_footer">
       <div class="width">
-        <div class="flex">
+        <div class="footer_about flex">
           <div class="footer_document">
             <div class="title">STORES</div>
 
@@ -297,30 +305,32 @@
 
       <div class="footer_item">
         <div class="flex justify-center align-items">
-          <div class="text_md">
+          <div class="text">
             <a href="">CONTACT US</a>
           </div>
 
           <div class="separator_footer"></div>
 
-          <div class="text_md">
+          <div class="text">
             <a href="">PRESS</a>
           </div>
 
           <div class="separator_footer"></div>
 
-          <div class="text_md">
+          <div class="text">
             <a href="">PRIVACY POLICY</a>
           </div>
 
           <div class="separator_footer"></div>
 
-          <div class="text_md">
+          <div class="text">
             <a href="">TERMS & CONDITIONS.</a>
           </div>
         </div>
       </div>
     </footer>
     <!-- end footer -->
+
+    <script src="script.js"></script>
   </body>
 </html>

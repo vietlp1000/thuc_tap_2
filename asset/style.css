@@ -68,9 +68,9 @@ body {
   font-weight: bold;
 }
 
-.menu-icon {
+.menu_icon {
   font-size: 30px;
-  padding: 5px;
+  margin: 10px 0 40px 0;
   cursor: pointer;
   display: none;
 }
@@ -123,33 +123,50 @@ body {
 
 .nav {
   margin: 32px 0;
-  font-size: 14px;
+  font-size: 13px;
 }
 
-.nav a {
-  padding: 18px 13px;
+.nav_group {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav_item {
+  padding: 18px 20px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.nav_item a {
   color: rgb(99, 79, 79);
   text-decoration: none;
-}
-
-.nav_item:hover {
-  background-color: rgb(221, 224, 33);
-}
-
-.nav_item:hover + .hashed_line {
-  border-color: rgb(221, 224, 33);
-}
-
-.about {
-  font-size: 26px;
-  color: rgb(99, 79, 79);
 }
 
 .dashed_line {
   width: 1px;
   height: 50px;
+  margin-left: 16px;
   border-left: 1px dotted rgb(221, 224, 33);
   border-width: thick;
+}
+
+.nav_group:hover {
+  background-color: rgb(221, 224, 33);
+}
+
+.nav_group:hover .nav_item a {
+  color: white;
+}
+
+.nav_group:hover + .dashed_line {
+  border-color: rgb(221, 224, 33);
+}
+
+.about {
+  padding: 40px 0 0 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: rgb(99, 79, 79);
 }
 
 .horizontal {
@@ -184,24 +201,21 @@ body {
 
 .dashed_line_main {
   width: 1px;
-  height: 200px;
+  height: 185px;
   margin: 0 20px;
   border: 1px dashed rgb(197, 182, 182);
 }
 
 .img_web {
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   margin: 40px 0 70px 0;
 }
 
-.img_shop {
-  width: 48%;
-  height: auto;
-}
-
 .img_web img {
+  height: 320px;
   width: 100%;
-  height: 340px;
 }
 
 .background_footer {
@@ -231,7 +245,7 @@ body {
 
 .footer_hashed_line {
   width: 1px;
-  height: 182px;
+  height: 185px;
   margin: 25px 25px 10px 25px;
   border: 1px dashed rgb(197, 182, 182);
 }
@@ -283,4 +297,91 @@ body {
   height: 15px;
   margin: 20px 20px;
   background-color: white;
+}
+
+@media screen and (max-width: 1160px) {
+  .header {
+    display: none;
+  }
+
+  .logo_icon {
+    display: none;
+  }
+
+  .dashed_line {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+    background: rgb(216, 213, 213);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding: 2px;
+    margin: 0;
+  }
+
+  .nav.show {
+    display: block;
+  }
+
+  .menu_icon {
+    display: block;
+    display: flex;
+    justify-content: start;
+  }
+
+  /* .about_item {
+    flex-direction: column;
+  }
+
+  .event {
+    width: 48%;
+    height: 500px;
+  }
+
+  .dashed_line_main {
+    width: 250px;
+    height: 1px;
+    border: 1px dashed rgb(197, 182, 182);
+  } */
+}
+
+@media screen and (max-width: 1000px) {
+  .footer_about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_hashed_line {
+    width: 250px;
+    height: 1px;
+    border: 1px dashed rgb(197, 182, 182);
+  }
+
+  .img_web {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .img_web img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* tuỳ chọn nếu muốn cắt ảnh đều */
+  }
+
+  .footer_inp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer_item a {
+    font-size: 10px;
+  }
 }
