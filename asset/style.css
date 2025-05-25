@@ -199,6 +199,10 @@ body {
   width: 60px;
 }
 
+.img_icon {
+  margin: 15px 0;
+}
+
 .dashed_line_main {
   width: 1px;
   height: 185px;
@@ -334,20 +338,36 @@ body {
     justify-content: start;
   }
 
-  /* .about_item {
-    flex-direction: column;
+  .about_item {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
 
   .event {
-    width: 48%;
-    height: 500px;
+    width: calc(50% - 60px);
+    box-sizing: border-box;
+  }
+
+  .dashed_one {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about_item {
+    flex-direction: column;
   }
 
   .dashed_line_main {
     width: 250px;
     height: 1px;
     border: 1px dashed rgb(197, 182, 182);
-  } */
+  }
+
+  .dashed_one {
+    display: revert;
+  }
 }
 
 @media screen and (max-width: 1000px) {
